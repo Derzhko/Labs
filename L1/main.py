@@ -17,6 +17,7 @@ time = 0.001
 
 alpha = 0
 
+
 def autopilot(angle, delta_m, time):
     if angle == 180:
         angle = pi
@@ -25,6 +26,7 @@ def autopilot(angle, delta_m, time):
     H = H_0 + v_0 * time + a * pow(time, 2) / 2
 
     return v, H
+
 
 while H > 0 and m > 0:
     if v > 0:
