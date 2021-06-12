@@ -11,8 +11,8 @@ collect = []
 
 x1 = pulp.LpVariable("Морковь", lowBound=0)
 x2 = pulp.LpVariable("Капуста", lowBound=0)
-x3 = pulp.LpVariable("Картофель", lowBound=0)
-x4 = pulp.LpVariable("Горох", lowBound=0)
+x3 = pulp.LpVariable("Горох", lowBound=0)
+x4 = pulp.LpVariable("Картофель", lowBound=0)
 x5 = pulp.LpVariable("Продукт М", lowBound=0)
 x6 = pulp.LpVariable("А орэндж", lowBound=0)
 
