@@ -2,9 +2,10 @@ from math import *
 from sympy import *
 
 N = 10
+epsilon = 0.0001
 def function(x):
     return 3 * x - cos(x) - 1
-epsilon = 0.0001
+
 def localisation(a, b, N):
     x0 = a
     x1 = a + (b - a) / N
