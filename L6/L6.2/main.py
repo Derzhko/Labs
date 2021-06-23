@@ -9,6 +9,7 @@ def function1(x0, y0):
     return math.sin(2*x0 - y0) -1.2*x0 - 0.4
 def function2(x0, y0):
     return 0.8*x0**2 + 1.5*y0**2 - 1
+
 # def function1(x0, y0):
 #     return math.sin(x0 - 1) + y0 - 1.3
 # def function2(x0, y0):
@@ -49,8 +50,8 @@ def function2(x0, y0):
 #     y0 = y0 + delta_y
 #     print(f'x{k}: {x0} y{k}: {y0}')
 #     k += 1
-x0 = 1.79999
-y0 = 0.5827
+x0 = -1
+y0 = 1.5
 k = 0
 diff1_x = diff(sin(x - 1) + y - 1.3, x).subs(x, x0).evalf()
 diff1_y = diff(sin(x - 1) + y - 1.3, y).subs(y, y0).evalf()
