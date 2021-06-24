@@ -23,11 +23,11 @@ my_column = my_sheet_obj.max_column
 row = 2 + variant
 for i in range(2, my_column + 1):
     if i < 2 + count_of_product:
-        collect.append(float(my_sheet_obj.cell(row=row, column=i).value))
+        collect.append(float(str(my_sheet_obj.cell(row=row, column=i).value).replace(',', '.')))
     elif 2 + count_of_product <= i < 2 + 2 * count_of_product:
-        available.append(float(my_sheet_obj.cell(row=row, column=i).value))
+        available.append(float(str(my_sheet_obj.cell(row=row, column=i).value).replace(',', '.')))
     else:
-        profit.append(float(my_sheet_obj.cell(row=row, column=i).value))
+        profit.append(float(str(my_sheet_obj.cell(row=row, column=i).value).replace(',', '.')))
 
 problem = pulp.LpProblem('0',LpMaximize)
 problem += collect[0] * profit[0] * x1 + collect[1] * profit[1] * x2 + collect[2] * profit[2] * x3 + collect[3] * profit[3] * x4 + collect[4] * profit[4] * x5 + collect[5] * profit[5] * x6, "Функция цели"
