@@ -28,7 +28,7 @@ cur.execute(""" CREATE TABLE IF NOT EXISTS Battles(
 """)
 conn.commit()
 
-aclasses = [('c1', 'bb', 'russia', 1, 11, 1000),
+aclasses = [('c1', 'bb', 'russia', 7, 11, 1000),
            ('c2', 'bc', 'germany', 2, 12, 2000),
            ('c3', 'bb', 'USA', 3, 13, 3000)]
 aships = [('s1', 'c1', 1901),
